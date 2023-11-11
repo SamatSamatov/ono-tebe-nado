@@ -12,7 +12,7 @@ body {
 
 .content-section {
   box-sizing: border-box;
-  width: 1440px;
+  min-width: 1440px;
   margin: auto;
 }
 
@@ -57,14 +57,17 @@ body {
   text-decoration: none;
 }
 
+.address-street-city {
+  max-width: 237px;
+}
+
 .text-decoration-underline {
   text-underline-position: under;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 1; 
   width: 100%;
   height: 100%;
@@ -74,9 +77,10 @@ body {
 .cover {
   position: relative;
   width: 1440px;
-  height: 757px;
+  min-height: 757px;
   background-image: url(/images/cover.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .cover__title {
@@ -127,7 +131,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 30px;
+  gap: 24px;
   padding-top: 127px;
 }
 
@@ -147,7 +151,7 @@ body {
 .bet-button {
   display: block;
   border: 1px solid #FFF;
-  padding: 15px 30px;
+  padding: 14px 29px;
   color: #FFF;
   font-family: Raleway, sans-serif;
   font-size: 22px;
@@ -209,6 +213,7 @@ body {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -223,21 +228,21 @@ body {
 }
 
 .card_type_film {
-  position: relative;
   background-image: url(/images/card-lot-01.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .card_type_book {
-  position: relative;
   background-image: url(/images/card-lot-02.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .card_type_picture {
-  position: relative;
   background-image: url(/images/card-lot-03.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .lots__look-more-link {
@@ -250,14 +255,13 @@ body {
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
-  width: 1385px;
-  height: 487px;
+  min-width: 1385px;
   margin-top: 183px;
   padding-left: 50px;
   font-family: Raleway, sans-serif;
 }
 
-.about__column__logo {
+.about__column-logo {
   display: flex;
   justify-content: center;
 }
@@ -277,7 +281,7 @@ body {
   height: 114px;
 }
 
-.about__column__text {
+.about__column-text {
   display: flex;
   flex-direction: column;
   font-family: Raleway, sans-serif;
@@ -329,8 +333,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  width: 240px;
-  height: 48px;
+  max-width: 240px;
 }
 
 .footer__social-link {
