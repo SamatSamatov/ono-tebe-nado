@@ -162,7 +162,7 @@ body {
 }
 
 .lots__heading {
-  margin-top: 180px;
+  margin-block-start: 180px;
   padding-block-end: 27px;
   padding-inline-start: 41px;
   font-weight: 700;
@@ -261,7 +261,7 @@ body {
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
-  margin-top: 183px;
+  margin-block-start: 183px;
   padding-inline-start: 50px;
   padding-inline-end: 43px;
   font-family: Raleway, sans-serif;
@@ -314,7 +314,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 180px;
+  margin-block-start: 180px;
   padding: 0 36px 90px 51px;
 }
 
